@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta keywords="formation html css débutant débutants" />
+    <title>Formation HTML CSS - introduction</title>
+    <!-- commentaire en HTML -->
+    <!--
+        ici que l'on appelle les ressources vers :
+            - fichiers de style .css
+            - fichiers de scripts javascript .js
+    -->
+</head>
+
+<body>
+    <header>
+        <h1>Formation HTML - CSS</h1>
+        <small>Formation débutants en HTML CSS</small>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html" target="_self" title="Lien vers la page d'accueil">
+                    Accueil
+                </a>
+            </li>
+            <li>
+                <a href="./univers.html" target="_self" title="Lien vers la description de l'univers">
+                    Univers
+                </a>
+            </li>
+            <li>
+                <a href="./extrait.html" target="_self" title="Lien vers des extraits vidéos">
+                    Vidéos
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html" target="_self" title="Lien vers le formulaire de contact">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="./localisation.html" target="_self" title="Lien vers l'accès du lieu">
+                    Le Lieu
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Les images</h2>
+                </header>
+                <main>
+                    <h3>la balise img</h3>
+                    <p>
+                        On peut ajouter directement une image dans une page web en utilisant la balise img
+                    </p>
+                    <img src="./images/alice/alice-in-wonderland-tea-party.png" 
+                    alt="Alice à l'heure du thé dans le pays des merveilles avec le lapin blanc, le chapelier fou, le lièvre de mars" 
+                    title="Alice à l'heure du thé dans le pays des merveilles avec le lapin blanc, le chapelier fou, le lièvre de mars"
+                    />
+                    <h3>la balise figure</h3>
+                    <p>
+                        La balise figure est une balise utilisée pour encadrer un document,
+                        un média, etc.
+                    </p>
+                    <figure>
+                        <img src="./images/alice/alice-in-wonderland-white-rabbit-s-house.jpg" 
+                        alt="Alice devant la maison du lapin blanc" />
+                        <figcaption>
+                            Alice devant la maison du lapin blanc
+                        </figcaption>
+                    </figure>
+                    <p>
+                        On peut aussi l'utiliser pour regrouper des images avec 
+                        la même légende
+                    </p>
+                    <figure>
+                        <img src="./images/alice/alice-in-wonderland-flowers.jpg" alt="les fleurs se moquent d'Alice qui est rétrécie" />
+                        <img src="./images/alice/alice-in-wonderland-flowers-2.jpg" alt="Alice essaie de rembarrer les fleurs qui se moquent d'elle" />
+                        <figcaption>
+                            les fleurs se moquent d'Alice qui est rétrécie<br />
+                            Alice essaie de rembarrer les fleurs qui se moquent d'elle
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            <cite>Terry Pratchett</cite>
+                        </figcaption>
+                        <p>
+                            <q>La lumière pense voyager plus vite que quoi que ce soit d'autre, 
+                            mais c'est faux. Peu importe à quelle vitesse voyage la lumière, 
+                            l'obscurité arrive toujours la première, et elle l'attend.</q>
+                        </p>
+                    </figure>
+                </main>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <h4>Sitemap</h4>
+            <ul>
+                <li>
+                    <a href="./index.html" target="_self" title="Lien vers la page d'accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="./univers.html" target="_self" title="Lien vers la description de l'univers">
+                        Univers
+                    </a>
+                </li>
+                <li>
+                    <a href="./extrait.html" target="_self" title="Lien vers des extraits vidéos">
+                        Vidéos
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html" target="_self" title="Lien vers le formulaire de contact">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="./localisation.html" target="_self" title="Lien vers l'accès du lieu">
+                        Le Lieu
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <h4>L'entreprise</h4>
+            <ul>
+                <li>
+                    <a href="#">CGU</a>
+                </li>
+                <li>
+                    <a href="#">Qui somme nous</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Nos partenaires</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
