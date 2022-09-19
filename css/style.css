@@ -1,0 +1,15 @@
+/*
+CSS : Cascading Style Sheet ou feuille de style en cascade
+
+pour appliquer un style à un élément de la page, il faut : 
+     - déclarer le sélecteur CSS de l'élément
+*/
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    il est possible de déclarer des variables en CSS
+    */
+    --header-background: #8b0000;
+    --article-background: rgba(139, 0, 0, 0.5);
+}
