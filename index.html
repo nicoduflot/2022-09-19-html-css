@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta keywords="formation html css débutant débutants" />
+    <title>Formation HTML CSS - introduction</title>
+    <!-- commentaire en HTML -->
+    <!--
+        ici que l'on appelle les ressources vers :
+            - fichiers de style .css
+            - fichiers de scripts javascript .js
+    -->
+</head>
+
+<body>
+    <header>
+        <h1>Formation HTML - CSS</h1>
+        <small>Formation débutants en HTML CSS</small>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html" target="_self" title="Lien vers la page d'accueil">
+                    Accueil
+                </a>
+            </li>
+            <li>
+                <a href="./univers.html" target="_self" title="Lien vers la description de l'univers">
+                    Univers
+                </a>
+            </li>
+            <li>
+                <a href="./extrait.html" target="_self" title="Lien vers des extraits vidéos">
+                    Vidéos
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html" target="_self" title="Lien vers le formulaire de contact">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="./localisation.html" target="_self" title="Lien vers l'accès du lieu">
+                    Le Lieu
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Les balises HTML</h2>
+                </header>
+                <main>
+                    <p>
+                        Les texte doit être écrit entre des balises paragraphe p .<br />
+                        Pour alller à la ligne dans un paragraphe on utilise le retour chariot : br .
+                    </p>
+                    <p>
+                        Par défaut cette balise paragraphe permet de séparer les blocs de texte
+                    </p>
+                    <p>
+                        Il existe des balises qui ne mettent en forme que le texte. Par exemple
+                        en <i>italique</i>, en <em>italique important</em>, en <b>gras</b>,
+                        en <strong>gras important</strong>
+                        (important parce que la balise utilisée a une influence sur le référencement).
+                    </p>
+                    <p>
+                        <span class="rouge-gras">Les balises de mise</span> en forme sont de moins en moins nombreuses,
+                        il reste les suivantes :
+                        surligner <mark>un mot ou une phrase</mark>, montrer du <s>contenu obsolète</s>,
+                        du <ins cite="Nicolas Duflot" datetime="2021-10-04">contenu ajouté</ins>, souligner
+                        du <u>contenu qui n'est pas un lien hypertexte</u>.
+                        Il existe aussi la <q> citation rapide </q>
+                    </p>
+                </main>
+            </article>
+            <article>
+                <header>
+                    <h2>Les listes</h2>
+                </header>
+                <main>
+                    <p>
+                        Il existe 2 types de liste : les listes non-ordonées (ul => unordered list)
+                        et les listes ordonnées (ol => ordered list). Les listes <b>doivent</b> être écritent
+                        en dehors des paragraphes.
+                    </p>
+                    <h3>Liste non-ordonnée</h3>
+                    <ul>
+                        <li>un élément de liste</li>
+                        <li>un deuxième élément de liste</li>
+                        <li>
+                            un élément de liste possèdant des sous-éléments de liste.
+                            <ul>
+                                <li>un sous-élément de liste</li>
+                                <li>un autre sous-élément de liste</li>
+                            </ul>
+                        </li>
+                        <li>un élément de liste</li>
+                        <li>un deuxième élément de liste</li>
+                        <li>
+                            un élément de liste possèdant des sous-éléments de liste.
+                            <ul>
+                                <li>un sous-élément de liste</li>
+                                <li>un autre sous-élément de liste</li>
+                                <li>
+                                    un élément de liste possèdant des sous-éléments de liste.
+                                    <ul>
+                                        <li>un sous-élément de liste</li>
+                                        <li>un autre sous-élément de liste</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Liste ordonnée</h3>
+                    <ol>
+                        <li>un élément de liste</li>
+                        <li>un deuxième élément de liste</li>
+                        <li>
+                            un élément de liste possèdant des sous-éléments de liste.
+                            <ol type="a">
+                                <li>un sous-élément de liste</li>
+                                <li>un autre sous-élément de liste</li>
+                            </ol>
+                        </li>
+                        <li>un élément de liste</li>
+                        <li>un deuxième élément de liste</li>
+                        <li>
+                            un élément de liste possèdant des sous-éléments de liste.
+                            <ol type="a">
+                                <li>un sous-élément de liste</li>
+                                <li>un autre sous-élément de liste</li>
+                                <li>
+                                    un élément de liste possèdant des sous-éléments de liste.
+                                    <ol type="I">
+                                        <li>un sous-élément de liste</li>
+                                        <li>un autre sous-élément de liste</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </main>
+            </article>
+            <article>
+                <header>
+                    <h2>D'autres balises de contenu</h2>
+                </header>
+                <main>
+                    <blockquote>
+                        <q>Alea jacta est</q>,
+                        <cite>La chute de l'empire romain</cite><br />
+                        <i><b>Jules César</b></i>
+                    </blockquote>
+                    <code>
+                        let maVariable;<br />
+                        maVariable = 12;<br />
+                        console.log(maVariable);<br />
+                        &lt;b&gt;texte&lt;/b&gt;<br />
+                        <span><</span>b<span>></span>mot en gras<span><</span>/b<span>></span>
+                    </code>
+                    <pre>
+int variable;
+variable = 12;
+indent
+&lt;b&gt;texte&lt;/b&gt;
+<span><</span>b<span>></span>mot en gras<span><</span>/b<span>></span>
+
+    |u__u|
+      ||
+                    </pre>
+                    <p>
+                        2H<sub>2</sub>SO<sub>4</sub><sup>2-</sup>
+                    </p>
+                </main>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <h4>Sitemap</h4>
+            <ul>
+                <li>
+                    <a href="./index.html" target="_self" title="Lien vers la page d'accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="./univers.html" target="_self" title="Lien vers la description de l'univers">
+                        Univers
+                    </a>
+                </li>
+                <li>
+                    <a href="./extrait.html" target="_self" title="Lien vers des extraits vidéos">
+                        Vidéos
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html" target="_self" title="Lien vers le formulaire de contact">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="./localisation.html" target="_self" title="Lien vers l'accès du lieu">
+                        Le Lieu
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <h4>L'entreprise</h4>
+            <ul>
+                <li>
+                    <a href="#">CGU</a>
+                </li>
+                <li>
+                    <a href="#">Qui somme nous</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Nos partenaires</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
