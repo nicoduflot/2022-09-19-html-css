@@ -10,6 +10,107 @@ pour appliquer un style à un élément de la page, il faut :
     /*
     il est possible de déclarer des variables en CSS
     */
-    --header-background: #8b0000;
+    --header-background: rgba(139, 0, 0, 1); 
+    /*
+    # => annonce une couleur rvb codée en héxadécimal 00 ff => 00 = 0, ff = 255 
+    en héxa f = 15 => ff
+    8b rouge, base dec 139, 00 vert => 0, 00 bleu => 0
+    */
     --article-background: rgba(139, 0, 0, 0.5);
+    --general-link-colors: #F22233;
+    --body-background-color: #F2EBDC; /* la couleur de fond de l'élément body */
+    --body-color:#0B0D09; /* la couleur de la police dans body */
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* 
+les classes css
+*/
+
+
+/*
+les règles css des éléments solo et / ou génériques
+*/
+h1, ul, body{
+    margin: 0;
+    /*
+    margin-top:
+    margin-left:
+    margin-bottom:
+    margin-right:
+    */
+}
+
+h1{
+    font-size: 4rem;
+}
+
+ul{
+    list-style-type:none;
+    padding-inline-start: 0;
+}
+
+a, a:visited{
+    color: var(--general-link-colors);
+    text-decoration:none;
+    font-weight: bold;
+    /*
+    text-transform: uppercase;
+    */
+}
+
+img{
+    max-width: 100%;
+}
+
+/*
+le css appliqué aux éléments de l'architecture
+*/
+
+body{
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+}
+
+body > header{
+    display: flex;
+    /*height: 100vh;*/
+    height: calc( 100vh - 2rem );
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/alice/alice-in-wonderland-queen-s-cards.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+body > header > h1,
+body > header > small{
+    color: var(--body-background-color);
+    text-shadow: 0 0 10px black;
+}
+
+body > header > small{
+    font-size: 2rem;
+}
+
+body > nav > ul{
+    display: flex;
+    line-height: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body > nav > ul > li{
+    border: 1px solid #000;
+}
+
+body > nav > ul > li > a{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
 }
