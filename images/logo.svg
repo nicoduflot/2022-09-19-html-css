@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128.66402mm"
+   height="119.91236mm"
+   viewBox="0 0 128.66402 119.91236"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.37014941"
+     inkscape:cx="379.57645"
+     inkscape:cy="448.46755"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-1928"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-20.729484,-39.313879)">
+    <ellipse
+       style="fill:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       id="path846"
+       cx="98.642593"
+       cy="113.65343"
+       rx="50.750904"
+       ry="38.599277" />
+    <path
+       id="path892"
+       style="fill:#000000;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round"
+       d="M 303.93164,148.58789 A 225.58458,206.67329 0 0 0 78.347656,355.26172 225.58458,206.67329 0 0 0 258.70312,557.61523 171.55235,163.44751 0 0 1 237.74219,479.53516 171.55235,163.44751 0 0 1 409.29492,316.08789 a 171.55235,163.44751 0 0 1 119.91797,46.58399 225.58458,206.67329 0 0 0 0.30273,-7.41016 225.58458,206.67329 0 0 0 -225.58398,-206.67383 z"
+       transform="scale(0.26458333)" />
+    <ellipse
+       style="fill:#000000;stroke:none;stroke-width:0.0748032;stroke-linecap:round;stroke-linejoin:round"
+       id="path894"
+       cx="108.29242"
+       cy="126.87725"
+       rx="33.953068"
+       ry="32.348988" />
+  </g>
+</svg>

@@ -1,0 +1,103 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    --main-heading-color: white;
+    --header-bg: darkred;
+    --nav-link-color: white;
+    --nav-bg-color: darkred;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+}
+
+body, h1, ul{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+
+img{
+    max-width: 100%;
+}
+
+body > header{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-bg);
+}
+
+body > nav,
+body > footer{
+    background-color: var(--nav-bg-color);
+}
+
+body > nav ul,
+body > footer > div > nav ul{
+    line-height: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body > nav ul li a,
+body > nav ul li a:visited,
+body > footer > div > nav ul li a,
+body > footer > div > nav ul li a:visited{
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: var(--nav-link-color);
+}
+
+body > nav ul li a:hover,
+body > footer > div > nav ul li a:hover{
+    background-color: var(--nav-link-color);
+    color: var(--nav-bg-color);
+}
+
+body > footer > div > nav ul{
+    justify-content: flex-start;
+}
+
+body > main, 
+body > nav > div,
+body > footer > div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profile-picture img{
+    border-radius: 800px;
+    background-color: bisque;
+}
+
+#perso, #experiences{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#profile-picture, #id-card{
+    width: 50%;
+}
+
+#experiences article{
+    width: 33%;
+}
