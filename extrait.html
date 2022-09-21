@@ -58,56 +58,58 @@
         <section>
             <article>
                 <header>
-                    <h2>Les images</h2>
+                    <h2>Les média audio et vidéo</h2>
                 </header>
                 <main>
-                    <h3>la balise img</h3>
+                    <h3>Les vidéos en local ou vidéos hébergées</h3>
                     <p>
-                        On peut ajouter directement une image dans une page web en utilisant la balise img
+                        Les vidéos hébergées sont enregistrées et hébergées sur le même 
+                        serveur que le site qui les diffuses.
                     </p>
-                    <img src="./images/alice/alice-in-wonderland-tea-party.png" 
-                    alt="Alice à l'heure du thé dans le pays des merveilles avec le lapin blanc, le chapelier fou, le lièvre de mars" 
-                    title="Alice à l'heure du thé dans le pays des merveilles avec le lapin blanc, le chapelier fou, le lièvre de mars"
-                    />
-                    <h3>la balise figure</h3>
+                    <video src="./media/videos/Fallout-4-Launch-Trailer.mp4" controls muted preload="auto"></video>
                     <p>
-                        La balise figure est une balise utilisée pour encadrer un document,
-                        un média, etc.
+                        Par soucis de performance, on peut proposer plusieurs formats de vidéo (extensions, poids, ) pour 
+                        proposer à l'internaute le format le plus adapté à sa connexion et sa carte graphique.
                     </p>
+                    <h4>Exemple avec youtube</h4>
+                    <video controls preload="auto">
+                        <source src="./media/videos/Big_Buck_Bunny_360_10s_1MB.mp4" type="video/mp4" />
+                        <source src="./media/videos/Big_Buck_Bunny_360_10s_1MB.webm" type="video/webm" />
+                    </video>
+                    <h3>Les vidéos hébergées sur des plateforme de partage</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aQCTaw_e9DU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4>Exemple avec dailymotion</h4>
                     <figure>
-                        <img src="./images/alice/alice-in-wonderland-white-rabbit-s-house.jpg" 
-                        alt="Alice devant la maison du lapin blanc" />
+                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x1nofw" width="100%" height="100%" allowfullscreen > </iframe> </div>
                         <figcaption>
-                            Alice devant la maison du lapin blanc
+                            <q>Tu peux pas test</q>
                         </figcaption>
                     </figure>
-                    <p>
-                        On peut aussi l'utiliser pour regrouper des images avec 
-                        la même légende
-                    </p>
-                    <figure>
-                        <img src="./images/alice/alice-in-wonderland-flowers.jpg" 
-                        alt="les fleurs se moquent d'Alice qui est rétrécie" />
-                        <img src="./images/alice/alice-in-wonderland-flowers-2.jpg" alt="Alice essaie de rembarrer les fleurs qui se moquent d'elle" />
-                        <figcaption>
-                            les fleurs se moquent d'Alice qui est rétrécie<br />
-                            Alice essaie de rembarrer les fleurs qui se moquent d'elle
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <figcaption>
-                            <cite>Terry Pratchett</cite>
-                        </figcaption>
-                        <p>
-                            <q>La lumière pense voyager plus vite que quoi que ce soit d'autre, 
-                            mais c'est faux. Peu importe à quelle vitesse voyage la lumière, 
-                            l'obscurité arrive toujours la première, et elle l'attend.</q>
-                        </p>
-                    </figure>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, &nbsp;&nbsp;&nbsp;adipisicing elit. Totam veritatis at laudantium! Libero magnam consequuntur impedit totam similique, sit aut tempora ut, numquam molestiae reprehenderit nobis excepturi id expedita tenetur?
-                    </p>
                 </main>
+            </article>
+            <article>
+                <h3>Les média son</h3>
+                <p>
+                    On va utiliser la balise audio pour ajouter des fichier sons 
+                    écoutables dans la page.
+                </p>
+                <figure>
+                    <figcaption>
+                        La bande son dans la ville de Tristram dans le premier Diablo (sur psOne)
+                    </figcaption>
+                    <audio controls preload="auto">
+                        <source src="./media/audio/diablo_town.mp3" type="audio/mp3" />
+                    </audio>
+                </figure>
+                <h3>Le son hébergé sur un site externe</h3>
+                <p>
+                    Comme youtube ou dailymotion, il existe des hébergeurs
+                    de fichiers musicaux, et certains proposent le partage en utilisant 
+                    eux aussi l'iframe
+                </p>
+                <figure>
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/621609495&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mathiasfudala" title="Mathias Fudala" target="_blank" style="color: #cccccc; text-decoration: none;">Mathias Fudala</a> · <a href="https://soundcloud.com/mathiasfudala/11-ha-ha-lemission-marrante-speciale-paris" title="#11 Ha Ha ! L&#x27;émission marrante *** Spéciale PARIS ***" target="_blank" style="color: #cccccc; text-decoration: none;">#11 Ha Ha ! L&#x27;émission marrante *** Spéciale PARIS ***</a></div>
+                </figure>
             </article>
         </section>
     </main>
