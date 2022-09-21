@@ -20,6 +20,8 @@ pour appliquer un style à un élément de la page, il faut :
     --general-link-colors: #F22233;
     --body-background-color: #F2EBDC; /* la couleur de fond de l'élément body */
     --body-color:#0B0D09; /* la couleur de la police dans body */
+    --fieldset-border-color: #736451;
+    --input-border-color: #40382A;
 }
 
 *, *::before, *::after{
@@ -122,10 +124,6 @@ body > nav > ul{
     border-bottom: 1px solid var(--general-link-colors);
 }
 
-body > nav > ul > li{
-    /*border: 1px solid #000;*/
-}
-
 body > nav > ul > li > a{
     display: block;
     padding-left: 15px;
@@ -144,6 +142,69 @@ body > main{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+article form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article form fieldset{
+    border: 1px dashed var(--fieldset-border-color);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--fieldset-border-color);
+}
+
+article form legend{
+    border: 1px dashed var(--fieldset-border-color);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--body-background-color);
+    box-shadow: 2px 2px 2px var(--fieldset-border-color);
+}
+
+article form fieldset p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article form label,
+article form input[type="text"],
+article form input[type="tel"],
+article form input[type="email"],
+article form select{
+    line-height: 1.5rem;
+    border-radius: 2px;
+    width: 45%;
+}
+
+article form input[type="text"],
+article form input[type="tel"],
+article form input[type="email"],
+article form select,
+form textarea{
+    border:1px solid var(--input-border-color);
+    padding-left: 5px;
+    border-radius: 2px;
+}
+
+form textarea{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+label.radio{
+    width: 100%;
+}
+
+.spacer{
+    width: 45%;
+    height: 1.5rem;
 }
 
 @media print{
